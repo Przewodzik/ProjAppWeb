@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #D4AF37;
+    --secondary-color: #B22222;
+    --support-color: #F5DEB3;
+    --background-color: #FAF3E0;
+    --text-color: #2E2E2E;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: 0px 5px 10px var(--secondary-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--support-color);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px var(--secondary-color);
+}
+
+h2 {
+    font-size: 28px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--secondary-color);
+    color: var(--text-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--support-color);
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--support-color);
+    color: var(--text-color);
+}
+
+table th, table td {
+    border: 2px solid var(--secondary-color);
+    padding: 10px;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+table td {
+    background-color: var(--support-color);
+}
+
+.footer-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 0 -10px 10px var(--secondary-color);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.logowanie {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px var(--secondary-color);
+    width: 400px;
+    margin: 50px auto;
+}
+
+.logowanie h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.logowanie form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logowanie label {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.logowanie input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--support-color);
+}
+
+.logowanie button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logowanie button:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
