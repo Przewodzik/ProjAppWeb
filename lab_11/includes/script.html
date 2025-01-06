@@ -1,0 +1,17 @@
+<!--Plik zawierający skrypt, który powoduje powiększanie i zmniejszanie się linków po najechaniu na nie-->
+<script>
+    $("nav a").on({
+        "mouseover": function() {
+            $(this).animate({
+                fontSize: '32px'
+            }, 800);
+        },
+        "mouseout": function() {
+            $(this).animate({
+                fontSize: '28px'
+            }, 800);
+        }
+    });
+</script></a>
+</body>
+</html>
