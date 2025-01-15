@@ -1,0 +1,451 @@
+/* podstawowa paleta kolorów */
+:root {
+    --primary-color: #A6A6A6; 
+    --secondary-color: #C2C2C2; 
+    --support-color: #8C8C8C; 
+    --text-color: #1E1E1E; 
+    --gold-color: #f9d71c;
+
+}
+
+/* paleta kolorów w trybie ciemnym */
+.darkmode{
+    --primary-color:#0D0D0D;
+    --secondary-color:#262626;
+    --support-color:#BFBFBF;
+    --text-color:#F2F2F2;
+    --gold-color: #f9d71c;
+}
+/* przycisk zmiany motywu */
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--support-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+
+}
+
+.cart-icon {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--support-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: fixed;
+    top: 30px;
+    right: 100px;
+}
+
+.cart-icon:hover {
+    cursor: pointer;
+    border: solid 5px var(--gold-color);
+}
+
+.cart-counter {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* ikony przycisku zmiany motywu */
+#theme-switch:hover{
+    cursor: pointer;
+    border: solid 5px var(--gold-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
+/* styl dla body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* styl dla wszystkich header   */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Funnel Display', sans-serif;
+}
+h1{
+    font-size: 3rem;
+    color: var(--gold-color);
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+p, a, li, span {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* pozycjonowanie logo strony*/
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* logo strony */
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* menu strony */
+.menu {
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    padding: 10px; 
+}
+
+/* nagłówek menu */
+.menu h1 {
+    margin: 0; 
+}
+
+/* linki w menu */
+nav{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 5px -2px var(--gold-color);
+}
+
+/* linki w menu */
+a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+/* najechanie na link w menu */
+a:hover{
+    color: var(--gold-color);
+}
+/* zegar */
+.time-box{
+    color: var(--text-color);
+    margin-right: 10rem;
+}
+/* styl ikona-tekst */
+.icon-text {
+    display: flex;
+    align-items: center; 
+    gap: 2px; 
+  }
+
+/* styl dla głównej treści strony */
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styl dla logowania do panelu administracyjnego */
+.logowanie{
+    height: 90%;
+    width: 100%;
+    max-width: 500px; 
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+
+/* tabela formularza logowania */
+table.logowanie {
+    width: 100%;
+}
+
+/* komórki tabeli */
+table.logowanie td {
+    padding: 10px 0;
+}
+
+/* inputy formularza logowania */
+input.logowanie {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--gold-color);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* przycisk logowania */
+input[type="password"].logowanie {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid var(--gold-color);
+    border-radius: 4px;
+    background-color: var(--support-color);
+    font-size: 1rem; 
+    margin-bottom: 10px;
+}
+/* przycisk logowania */
+input[type="text"].logowanie {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid var(--gold-color);
+    border-radius: 4px;
+    background-color: var(--support-color);
+    font-size: 1rem; 
+    margin-bottom: 15px;
+}
+/* przycisk logowania */
+input.logowanie[type="submit"] {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* przycisk logowania */
+input.logowanie[type="submit"]:hover {
+    border: solid 2px var(--gold-color);
+    columns: var(--gold-color);
+}
+/* error message */
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* styl dla stopki strony */
+footer{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -4px 5px -2px var(--gold-color);
+}
+
+/* styl dla panelu po zalogoawniu */
+.logged-in {
+    width: 50%;
+    height: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--gold-color);
+    text-align: center;
+}
+
+/* Nagłówek panelu administracyjnego */
+.logged-in h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--gold-color);
+}
+
+/* Kontener przycisków */
+.admin-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Stylizacja przycisków */
+.admin-button, .logout-button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 12px 25px;
+    font-size: 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+}
+
+/* Efekt najechania myszką */
+.admin-button:hover, .logout-button:hover {
+    background-color: var(--support-color);
+    border-color: var(--gold-color);
+    transform: translateY(-2px);
+}
+
+/* Efekt przy kliknięciu */
+.admin-button:active, .logout-button:active {
+    background-color: var(--primary-color);
+    transform: translateY(0);
+}
+
+/* Przyciski mają równą szerokość */
+.admin-button, .logout-button {
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Formularz wylogowywania */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+/* Kontener dla formularza edycji */
+.edit-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Formularz edycji */
+.edit-form {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    color: var(--text-color);
+    margin: 0 auto; /* Wyśrodkowanie szerokościowo */
+}
+
+/* Nagłówek formularza */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+/* label formularza */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* inputy formularza */
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+}
+/* inputy formularza */
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* przycisk formularza */
+form button {
+    padding: 10px;
+    background-color: var(--support-color);
+    margin: 5px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* efekt najechania na przycisk */
+form button:hover {
+    background-color: var(--gold-color);
+}
+
+/* tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--support-color);
+    color: var(--text-color);
+}
+
+table th, table td {
+    border: 2px solid var(--support-color);
+    padding: 10px;
+    text-align: center; /* Centruje obraz poziomo */
+    vertical-align: middle; /* Centruje obraz pionowo */
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+table td {
+    background-color: var(--secondary-color);
+}
+
+/* dodanie strony */
+.add-page-form {
+    width: 100%;
+    margin: 20;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.password-form{
+    background-color: var(--primary-color);
+
+}
+
+
